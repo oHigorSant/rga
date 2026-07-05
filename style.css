@@ -333,6 +333,20 @@ button { font-family: inherit; }
     gap: 6px;
   }
   .chip-row {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 10px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .chip-row .chip {
+    text-align: center;
+    display: block;
+  }
+  .chip-row .chip:last-child {
+    grid-column: span 2;
+    margin: 0 auto;
+    width: fit-content;
   }
 }
