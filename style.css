@@ -277,32 +277,32 @@ button { font-family: inherit; }
 @media (max-width: 768px) {
   .rga-logo-wrap img { height: 32px; }
   .hero {
-    padding: 44px 20px 80px;
+    padding: 32px 20px 70px;
     min-height: calc(100vh - 60px); /* Ocupa o primeiro frame mobile */
     display: flex;
-    align-items: center; /* Centraliza verticalmente o bloco expandido */
+    align-items: center; /* Centraliza verticalmente o bloco */
   }
   .hero-content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 10px; /* Posição inicial levemente abaixo do header */
+    margin-top: 0;
   }
   .hero-kicker {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
   .hero h1 {
     font-size: 23px;
-    line-height: 1.3;
-    margin-bottom: 24px; /* Aumenta espaço após o título */
+    line-height: 1.25;
+    margin-bottom: 16px; /* Espaço moderado */
   }
   .hero-copy {
-    gap: 16px; /* Aumenta espaço entre os dois parágrafos */
-    margin-bottom: 38px; /* Aumenta espaço antes do botão */
+    gap: 10px; /* Espaço moderado entre os dois parágrafos */
+    margin-bottom: 24px; /* Espaço moderado antes do botão */
   }
   .hero-copy p {
-    font-size: 14.5px;
-    line-height: 1.6; /* Aumenta espaçamento das linhas */
+    font-size: 14px;
+    line-height: 1.5; /* Espaçamento de linhas equilibrado */
   }
   .hero-actions {
     width: 100%;
