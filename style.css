@@ -334,19 +334,30 @@ button { font-family: inherit; }
   }
   .chip-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px 8px;
     width: 100%;
-    max-width: 420px;
+    max-width: 480px;
     margin: 0 auto;
   }
   .chip-row .chip {
+    font-size: 11px;
+    padding: 6px 4px;
+    white-space: normal;
     text-align: center;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+    height: 100%;
   }
-  .chip-row .chip:last-child {
+  .chip-row .chip:nth-child(1),
+  .chip-row .chip:nth-child(2),
+  .chip-row .chip:nth-child(3) {
     grid-column: span 2;
-    margin: 0 auto;
-    width: fit-content;
+  }
+  .chip-row .chip:nth-child(4),
+  .chip-row .chip:nth-child(5) {
+    grid-column: span 3;
   }
 }
