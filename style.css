@@ -55,22 +55,23 @@ button { font-family: inherit; }
 }
 
 /* HEADER */
-.rga-header { position: sticky; top: 0; z-index: 50; background: var(--header-bg); backdrop-filter: blur(6px); border-bottom: 1px solid var(--border); transition: background 0.25s ease, border-color 0.25s ease; }
+.rga-header { position: sticky; top: 0; z-index: 50; background: rgba(13, 18, 48, 0.95); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(255, 255, 255, 0.12); transition: background 0.25s ease, border-color 0.25s ease; }
 .rga-header-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px clamp(16px, 6vw, 100px); }
 .rga-logo-wrap { display: inline-flex; align-items: center; flex-shrink: 0; }
 .rga-logo-wrap img { height: 38px; width: auto; display: block; transition: height 0.2s ease; }
 .rga-desktop-nav { display: none; align-items: center; gap: clamp(20px, 2.4vw, 36px); flex: 1; justify-content: center; }
-.rga-desktop-nav a { font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 14.5px; color: var(--text-body); white-space: nowrap; }
+.rga-desktop-nav a { font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 14.5px; color: #C4C9E6; white-space: nowrap; transition: color 0.2s ease; }
+.rga-desktop-nav a:hover { color: #FFFFFF; }
 .rga-desktop-actions { display: none; align-items: center; gap: 10px; flex-shrink: 0; }
 .btn-whatsapp-sm { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #fff; font-weight: 700; font-family: 'Archivo', sans-serif; font-size: 14px; padding: 10px 16px; border-radius: 8px; white-space: nowrap; }
 .btn-orange-sm { background: var(--orange); color: #fff; font-weight: 700; font-family: 'Archivo', sans-serif; font-size: 14px; padding: 12px 18px; border-radius: 8px; text-align: center; display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; letter-spacing: 0.2px; }
-.rga-mobile-toggle { width: 44px; height: 44px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-card); display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; padding: 0; }
+.rga-mobile-toggle { width: 44px; height: 44px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.12); background: #171F4C; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; padding: 0; }
 .rga-burger { display: flex; flex-direction: column; gap: 5px; width: 20px; }
-.rga-burger span { display: block; height: 2px; width: 100%; background: var(--text-heading); border-radius: 2px; transition: transform 0.2s ease, opacity 0.2s ease; }
+.rga-burger span { display: block; height: 2px; width: 100%; background: #FFFFFF; border-radius: 2px; transition: transform 0.2s ease, opacity 0.2s ease; }
 .rga-mobile-toggle[aria-expanded="true"] .rga-bar-top { transform: translateY(7px) rotate(45deg); }
 .rga-mobile-toggle[aria-expanded="true"] .rga-bar-mid { opacity: 0; }
 .rga-mobile-toggle[aria-expanded="true"] .rga-bar-bottom { transform: translateY(-7px) rotate(-45deg); }
-.rga-mobile-menu { border-top: 1px solid var(--border); background: var(--bg-card); padding: 16px clamp(16px, 6vw, 100px) 20px; display: none; flex-direction: column; gap: 10px; }
+.rga-mobile-menu { border-top: 1px solid rgba(255, 255, 255, 0.12); background: #171F4C; padding: 16px clamp(16px, 6vw, 100px) 20px; display: none; flex-direction: column; gap: 10px; }
 .rga-mobile-menu.open { display: flex; }
 .btn-whatsapp-block { display: flex; align-items: center; justify-content: center; gap: 8px; background: #25D366; color: #fff; font-weight: 700; font-family: 'Archivo', sans-serif; font-size: 15px; padding: 13px 16px; border-radius: 8px; }
 .btn-orange-block { background: var(--orange); color: #fff; font-weight: 700; font-family: 'Archivo', sans-serif; font-size: 15px; padding: 13px 16px; border-radius: 8px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.2px; }
