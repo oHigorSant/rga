@@ -277,8 +277,8 @@ button { font-family: inherit; }
 @media (max-width: 768px) {
   .rga-logo-wrap img { height: 32px; }
   .hero {
-    padding: 32px 20px 70px;
-    min-height: calc(100vh - 60px); /* Ocupa o primeiro frame mobile */
+    padding: 24px 20px 60px;
+    min-height: 80vh; /* Altura reduzida para acomodar barras de navegadores móveis */
     display: flex;
     align-items: center; /* Centraliza verticalmente o bloco */
   }
