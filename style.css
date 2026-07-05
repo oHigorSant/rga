@@ -279,7 +279,7 @@ button { font-family: inherit; }
     padding: 44px 20px 80px;
     min-height: calc(100vh - 60px); /* Ocupa o primeiro frame mobile */
     display: flex;
-    align-items: flex-start; /* Alinha o conteúdo mais ao topo */
+    align-items: center; /* Centraliza verticalmente o bloco expandido */
   }
   .hero-content {
     display: flex;
