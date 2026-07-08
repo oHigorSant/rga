@@ -363,8 +363,8 @@ button { font-family: inherit; }
 @media (max-width: 768px) {
   .rga-logo-wrap img { height: 32px; }
   .hero {
-    padding: 24px 20px 60px;
-    min-height: 80vh; /* Altura reduzida para acomodar barras de navegadores móveis */
+    padding: 20px 20px 32px;
+    min-height: 58vh; /* Altura reduzida para a faixa de credibilidade aparecer sem rolar */
     display: flex;
     align-items: center; /* Centraliza verticalmente o bloco */
   }
