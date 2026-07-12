@@ -58,7 +58,7 @@ button { font-family: inherit; }
 .rga-header { position: sticky; top: 0; z-index: 50; background: rgba(13, 18, 48, 0.95); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(255, 255, 255, 0.12); transition: background 0.25s ease, border-color 0.25s ease; }
 .rga-header-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px clamp(16px, 6vw, 100px); }
 .rga-logo-wrap { display: inline-flex; align-items: center; flex-shrink: 0; }
-.rga-logo-wrap img { height: 38px; width: auto; display: block; transition: height 0.2s ease; }
+.rga-logo-wrap img { height: 50px; width: auto; display: block; margin: -6px 0; transition: height 0.2s ease; }
 .rga-desktop-nav { display: none; align-items: center; gap: clamp(20px, 2.4vw, 36px); flex: 1; justify-content: center; }
 .rga-desktop-nav a { font-family: 'Archivo', sans-serif; font-weight: 600; font-size: 14.5px; color: #C4C9E6; white-space: nowrap; transition: color 0.2s ease; }
 .rga-desktop-nav a:hover { color: #FFFFFF; }
@@ -146,15 +146,6 @@ button { font-family: inherit; }
 }
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none !important; }
-}
-
-/* SCROLL DOWN ARROW */
-.scroll-down { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; transition: color 0.2s ease, opacity 0.2s ease; z-index: 10; animation: bounce 2s infinite; }
-.scroll-down:hover { color: #ffffff; opacity: 1; }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-  40% { transform: translateX(-50%) translateY(-8px); }
-  60% { transform: translateX(-50%) translateY(-4px); }
 }
 
 /* PROBLEMA */
@@ -295,11 +286,10 @@ button { font-family: inherit; }
 .segmento-row .check {
   display: flex; align-items: center; justify-content: center;
   width: 24px; height: 24px; min-width: 24px;
-  border-radius: 7px;
-  background: rgba(240,121,26,0.14);
-  border: 2px solid var(--orange);
-  color: var(--orange);
-  font-weight: 900; font-size: 13px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(240,121,26,0.35);
 }
 .segmentos-list { display: flex; flex-direction: column; gap: 14px; }
 
@@ -361,7 +351,7 @@ button { font-family: inherit; }
 
 /* OVERRIDES PARA DISPOSITIVOS MÓVEIS (MELHORIA HIERARQUIA HERO + LOGO) */
 @media (max-width: 768px) {
-  .rga-logo-wrap img { height: 32px; }
+  .rga-logo-wrap img { height: 42px; margin: 0; }
   .hero {
     padding: 20px 20px 32px;
     min-height: 58vh; /* Altura reduzida para a faixa de credibilidade aparecer sem rolar */

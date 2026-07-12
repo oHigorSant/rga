@@ -1,6 +1,7 @@
 // PLACEHOLDER — substituir pelo número real de WhatsApp da RGA Industrial (formato: 55DDXXXXXXXXX, sem espaços/símbolos)
 const WHATSAPP_NUMBER = '5500000000000';
 const WHATSAPP_MESSAGE = 'Olá! Preciso de ajuda para encontrar uma peça/componente industrial.';
+const WHATSAPP_FORM_MESSAGE = 'Olá! Acabei de enviar uma solicitação de orçamento pelo site da RGA Industrial.';
 
 function setWhatsappLinks() {
   const link = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(WHATSAPP_MESSAGE);
@@ -72,6 +73,11 @@ function initForm() {
     e.preventDefault();
     form.classList.add('hide');
     success.classList.add('show');
+    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const whatsappUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(WHATSAPP_FORM_MESSAGE);
+    setTimeout(function () {
+      window.location.href = whatsappUrl;
+    }, 1800);
   });
 }
 
