@@ -320,7 +320,7 @@ button { font-family: inherit; }
 .contato-inner { max-width: 720px; margin: 0 auto; }
 .contato-inner > h2 { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: clamp(22px,2.8vw,28px); color: var(--text-heading); margin: 0 0 12px; text-align: center; }
 .contato-sub { font-size: 15.5px; color: var(--text-body); text-align: center; margin: 0 0 32px; }
-.whatsapp-banner { display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.4); color: var(--navy); font-weight: 700; font-family: 'Archivo', sans-serif; font-size: 15px; padding: 14px 20px; border-radius: 10px; margin: 0 0 24px; }
+.whatsapp-banner { display: flex; align-items: center; justify-content: center; gap: 10px; background: rgba(37,211,102,0.12); border: 1px solid rgba(37,211,102,0.4); color: var(--text-heading); font-weight: 700; font-family: 'Archivo', sans-serif; font-size: 15px; padding: 14px 20px; border-radius: 10px; margin: 0 0 24px; transition: color 0.25s ease; }
 .form-success { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: clamp(32px,5vw,48px); text-align: center; display: none; }
 .form-success.show { display: block; }
 .form-success .check { font-size: 40px; margin-bottom: 12px; }
